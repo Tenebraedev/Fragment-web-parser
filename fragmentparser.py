@@ -34,10 +34,28 @@ def start_schedule(months, cookies, headers):
 
 if __name__ == '__main__':
     cookies = {
-            }
+    'stel_ssid': '24201b00834bda24ce_15184294661743886494',
+    'stel_dt': '-180',
+    'stel_ton_token': '8zn92pIrIb0T1QIxyoIWhEF8z7uMIeq_WiJzL-3ApceNmWFrS-aRwcLM8a2edZT_qZrLLSiRoS21wcZrIenbq76rDqQmP8HzsrVNBd1qe9Iql-7DV7ogtTp_VxUlpxUXnzMebPEl5_1YyugXtooseR-KMvR_cLQKD0ZyNQL9O4904MjUQMs',
+}
 
-    headers = {
-    }
+headers = {
+    'authority': 'fragment.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'ru,en;q=0.9',
+    'cache-control': 'max-age=0',
+    # 'cookie': 'stel_ssid=24201b00834bda24ce_15184294661743886494; stel_dt=-180; stel_ton_token=8zn92pIrIb0T1QIxyoIWhEF8z7uMIeq_WiJzL-3ApceNmWFrS-aRwcLM8a2edZT_qZrLLSiRoS21wcZrIenbq76rDqQmP8HzsrVNBd1qe9Iql-7DV7ogtTp_VxUlpxUXnzMebPEl5_1YyugXtooseR-KMvR_cLQKD0ZyNQL9O4904MjUQMs',
+    'referer': 'https://fragment.com/premium?months=3',
+    'sec-ch-ua': '"Not.A/Brand";v="8", "Chromium";v="114", "YaBrowser";v="23"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Mobile Safari/537.36',
+}
 
     thread12 = threading.Thread(target=start_schedule, args=('12', cookies, headers))
     thread6 = threading.Thread(target=start_schedule, args=('6', cookies, headers))
